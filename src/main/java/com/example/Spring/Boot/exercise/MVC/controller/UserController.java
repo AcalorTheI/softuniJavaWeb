@@ -28,7 +28,7 @@ public class UserController {
     @PostMapping("/login")
     public String submitLoginForm(@ModelAttribute LoginFormDto loginFormDto, Model model) {
         userService.login();
-
+        // Ovo je komentar
 
         return "index";
     }
